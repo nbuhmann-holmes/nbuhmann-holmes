@@ -129,11 +129,13 @@ footer {
     padding-top: 36px;
   }
 
-  .intro {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding-bottom: 38px;
-  }
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 190px;
+  gap: 48px;
+  align-items: start;
+  padding-bottom: 54px;
+}
 
   .portrait {
     width: 150px;
@@ -143,4 +145,32 @@ footer {
   body {
     font-size: 17px;
   }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 42px;
+}
+
+.name {
+  font-size: 1.05rem;
+}
+
+.name a {
+  color: var(--text);
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  font-size: 0.9rem;
+}
+
+nav a {
+  color: var(--muted);
+}
+
+nav a:hover {
+  color: var(--text);
 }
