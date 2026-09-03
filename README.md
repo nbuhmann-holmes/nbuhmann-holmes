@@ -6,7 +6,7 @@ This is a deliberately simple static website designed for GitHub Pages.
 
 - `index.html` — all website content
 - `style.css` — visual design
-- `images/Billede.jpg` — profile photo
+- `Billede.jpg` — profile photo
 - `cv.pdf` — add your CV here when ready
 
 ## Before publishing
