@@ -31,7 +31,11 @@ body {
   padding: 64px 0 48px;
 }
 
-h1, h2 {
+
+/* Typography */
+
+h1,
+h2 {
   font-weight: 400;
 }
 
@@ -52,6 +56,9 @@ p {
   margin: 0 0 18px;
 }
 
+
+/* Links */
+
 a {
   color: var(--link);
   text-decoration: none;
@@ -63,11 +70,47 @@ a:focus {
   border-bottom-color: currentColor;
 }
 
+
+/* Navigation */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 42px;
+}
+
+.name {
+  font-size: 1.05rem;
+}
+
+.name a {
+  color: var(--text);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  font-size: 0.9rem;
+}
+
+nav a {
+  color: var(--muted);
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+
+/* Introduction */
+
 .intro {
   display: grid;
   grid-template-columns: 1fr 190px;
   gap: 48px;
-  align-items: center;
+  align-items: start;
   padding-bottom: 54px;
 }
 
@@ -84,15 +127,16 @@ a:focus {
   border-radius: 2px;
 }
 
+
+/* Sections */
+
 section {
   border-top: 1px solid var(--rule);
   padding: 34px 0 30px;
 }
 
-.placeholder {
-  color: var(--muted);
-  font-size: 0.95em;
-}
+
+/* Publications */
 
 .publication {
   margin: 0 0 24px;
@@ -111,11 +155,33 @@ section {
   font-size: 0.9em;
 }
 
+
+/* Teaching */
+
+.teaching-entry {
+  margin-bottom: 28px;
+}
+
+ul {
+  margin-top: 8px;
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+
+/* Social links */
+
 .social {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
+
+
+/* Footer */
 
 footer {
   border-top: 1px solid var(--rule);
@@ -124,18 +190,30 @@ footer {
   font-size: 0.85em;
 }
 
+
+/* Mobile */
+
 @media (max-width: 600px) {
+
   .site {
     padding-top: 36px;
   }
 
-.intro {
-  display: grid;
-  grid-template-columns: 1fr 190px;
-  gap: 48px;
-  align-items: start;
-  padding-bottom: 54px;
-}
+  .header {
+    display: block;
+    padding-bottom: 32px;
+  }
+
+  nav {
+    margin-top: 18px;
+    gap: 14px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-bottom: 38px;
+  }
 
   .portrait {
     width: 150px;
@@ -145,32 +223,4 @@ footer {
   body {
     font-size: 17px;
   }
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-bottom: 42px;
-}
-
-.name {
-  font-size: 1.05rem;
-}
-
-.name a {
-  color: var(--text);
-}
-
-nav {
-  display: flex;
-  gap: 22px;
-  font-size: 0.9rem;
-}
-
-nav a {
-  color: var(--muted);
-}
-
-nav a:hover {
-  color: var(--text);
 }
